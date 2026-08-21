@@ -5,9 +5,8 @@
 // which is the single source of truth (src/discover/registry.rs).
 // To add or change rewrite rules, edit the Rust registry — not this file.
 //
-// Same architecture as the Pi extension. Uses OMP's `tool_call` event to
-// intercept bash commands BEFORE execution, calling `rtk rewrite` to obtain
-// the token-optimized equivalent, then mutating `event.input.command` in-place.
+// Uses OMP's `tool_call` event to intercept bash commands before execution,
+// calling `rtk rewrite` to obtain the token-optimized equivalent.
 //
 // Exit code contract for `rtk rewrite`:
 //   0 + stdout  Rewrite found → mutate command
@@ -34,17 +33,18 @@ interface ExtensionContext {
 		setStatus(key: string, text: string | undefined): void;
 	};
 }
-interface ExtensionAPI {
-	setLabel(label: string): void;
+interface ToolCallEventResult {
+	block?: boolean;
+	reason?: string;
+	input?: Record<string, unknown>;
+}
+interface HookAPI {
 	on(
 		event: "tool_call",
 		handler: (
 			event: ToolCallEvent,
 			ctx: ExtensionContext,
-		) =>
-			| Promise<{ block?: boolean; reason?: string } | void>
-			| { block?: boolean; reason?: string }
-			| void,
+		) => Promise<ToolCallEventResult | void> | ToolCallEventResult | void,
 	): void;
 	on(
 		event: "session_start",
@@ -73,7 +73,7 @@ function parseSemver(raw: string): [number, number, number] | null {
 
 // Calls `rtk rewrite`; returns the rewritten command or null (pass through).
 async function rewriteCommand(
-	pi: ExtensionAPI,
+	pi: HookAPI,
 	cmd: string,
 	signal?: AbortSignal,
 ): Promise<string | null> {
@@ -86,8 +86,7 @@ async function rewriteCommand(
 	return result.stdout.trim() || null;
 }
 
-export default async function (pi: ExtensionAPI): Promise<void> {
-	pi.setLabel("RTK");
+export default async function (pi: HookAPI): Promise<void> {
 
 	// Probe rtk version at load time; disables extension if missing or too old.
 	const ver = await pi.exec("rtk", ["--version"], { timeout: REWRITE_TIMEOUT_MS });
@@ -121,11 +120,12 @@ export default async function (pi: ExtensionAPI): Promise<void> {
 			if (command.trimStart().startsWith("rtk ")) return;
 			if (process.env.RTK_DISABLED === "1") return;
 
-			// Delegate to RTK.
+			// Mutate for older OMP versions and return for newer versions.
 			const rewritten = await rewriteCommand(pi, command, ctx?.signal);
-			if (rewritten && rewritten !== command) {
-				event.input.command = rewritten;
-			}
+			if (!rewritten || rewritten === command) return;
+
+			event.input.command = rewritten;
+			return { input: event.input };
 		} catch (err) {
 			// Fail open: never block execution on an unexpected error.
 			pi.logger.warn(
@@ -133,6 +133,5 @@ export default async function (pi: ExtensionAPI): Promise<void> {
 			);
 		}
 
-		// Return undefined = transparent passthrough (no block).
 	});
 }

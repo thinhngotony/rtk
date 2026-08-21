@@ -7535,6 +7535,21 @@ mod tests {
     }
 
     // ─── OMP integration tests ───────────────────────────────────────────
+    #[test]
+    fn test_omp_hook_rewrites_across_hook_api_versions() {
+        assert!(
+            !OMP_PLUGIN.contains("setLabel("),
+            "hooks/pre receives HookAPI, which has no setLabel method"
+        );
+        assert!(
+            OMP_PLUGIN.contains("event.input.command = rewritten"),
+            "older OMP versions require in-place input mutation"
+        );
+        assert!(
+            OMP_PLUGIN.contains("return { input:"),
+            "newer OMP versions require the handler to return revised input"
+        );
+    }
 
     #[test]
     fn test_run_omp_mode_global_installs_plugin() {

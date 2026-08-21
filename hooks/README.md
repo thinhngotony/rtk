@@ -41,7 +41,7 @@ Each agent subdirectory has its own README with hook-specific details:
 - **[`codex/`](codex/README.md)** — Awareness document, `AGENTS.md` integration, `$CODEX_HOME` or `~/.codex/` location
 - **[`opencode/`](opencode/README.md)** — TypeScript plugin, `zx` library, `tool.execute.before` event, in-place mutation
 - **[`pi/`](pi/README.md)** — TypeScript extension, `tool_call` event, `isToolCallEventType` guard, in-place mutation, `~/.pi/agent/extensions/`
-- **[`omp/`](omp/README.md)** — TypeScript extension, `tool_call` event, in-place mutation, `~/.omp/agent/hooks/pre/`
+- **[`omp/`](omp/README.md)** — TypeScript hook, `tool_call` event, compatible input replacement, `~/.omp/agent/hooks/pre/`
 - **[`hermes/`](hermes/README.md)** — Python plugin, `pre_tool_call` hook, in-place terminal command mutation
 
 ## Supported Agents
@@ -58,7 +58,7 @@ Each agent subdirectory has its own README with hook-specific details:
 | Codex CLI | AGENTS.md / instructions | Prompt-level guidance | N/A |
 | OpenCode | TypeScript plugin (`tool.execute.before`) | In-place mutation | Yes |
 | Pi | TypeScript extension (`tool_call` event) | In-place mutation | Yes |
-| OMP | TypeScript extension (`tool_call` event) | In-place mutation | Yes |
+| OMP | TypeScript hook (`tool_call` event) | Compatible input replacement | Yes |
 | Hermes | Python plugin (`pre_tool_call`) | In-place mutation | Yes |
 
 ## JSON Formats by Agent

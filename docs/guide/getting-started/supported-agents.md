@@ -131,7 +131,7 @@ rtk init --agent omp
 rtk init --agent omp --global
 ```
 
-Creates `.omp/hooks/pre/rtk.ts` (local) or `~/.omp/agent/hooks/pre/rtk.ts` (global). OMP auto-discovers extensions from the `hooks/pre/` directory on startup. The extension uses `rtk rewrite` for in-place command mutation — same architecture as the Pi extension.
+Creates `.omp/hooks/pre/rtk.ts` (local) or `~/.omp/agent/hooks/pre/rtk.ts` (global). OMP auto-discovers hooks from the `hooks/pre/` directory on startup. The hook uses `rtk rewrite`, then mutates and returns the revised input for compatibility across OMP versions.
 
 Uninstall:
 
@@ -229,7 +229,7 @@ Support is blocked on upstream `BeforeToolCallback` ([mistral-vibe#531](https://
 | **Plugin** | TypeScript, JavaScript, or Python in agent's plugin system | Transparent, in-place mutation when the agent allows it |
 | **Rules file** | Prompt-level instructions | Guidance only — agent is told to prefer `rtk <cmd>` |
 
-Rules file integrations (Cline, Windsurf, Codex, Kilo Code, Antigravity) rely on the model following instructions. Full hook integrations (Claude Code, Cursor, Gemini) are guaranteed — the command is rewritten before the agent sees it. Plugin integrations (OpenCode, Pi, OMP) use in-place mutation via the agent's TypeScript extension API.
+Rules file integrations (Cline, Windsurf, Codex, Kilo Code, Antigravity) rely on the model following instructions. Full hook integrations (Claude Code, Cursor, Gemini, OMP) are guaranteed — the command is rewritten before the agent sees it. Plugin integrations (OpenCode, Pi) use in-place mutation via the agent's TypeScript extension API.
 
 ## Windows support
 

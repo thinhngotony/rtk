@@ -4,7 +4,7 @@
 
 ## Design Intent
 
-RTK's OMP extension is a **rewrite-only token optimizer**. It mutates bash commands to their
+RTK's OMP extension is a **rewrite-only token optimizer**. It rewrites bash commands to their
 `rtk`-prefixed equivalents, saving 60–90% context tokens.
 
 **Permission gating is intentionally out of scope.** RTK does not block, confirm, or audit
@@ -13,23 +13,18 @@ RTK's hook fast, predictable, and composable with other OMP extensions.
 
 ## Specifics
 
-- TypeScript extension using OMP's `ExtensionAPI` (loaded via the `hooks/pre/` discovery path)
-- Subscribes to `tool_call` event, narrows to `bash` tool via `toolName` check
-- Calls `rtk rewrite` via `pi.exec`; mutates `event.input.command` in-place if rewrite differs
+- TypeScript hook using OMP's `HookAPI` (loaded via the `hooks/pre/` discovery path)
+- Subscribes to `tool_call` events and narrows to the `bash` tool via `toolName`
+- Calls `rtk rewrite` via `pi.exec`; mutates and returns the revised input for compatibility across OMP versions
 - All error paths return `undefined` (pass through); RTK never blocks execution
-- Sets UI label to "RTK" via `pi.setLabel("RTK")` so the extension is identifiable in OMP's status line
 - Version guard at load time: probes `rtk --version`; if the binary is missing, sets a persistent status-line warning via `session_start` (`ctx.ui.setStatus`) and disables rewrites; if `< 0.23.0`, logs a warning and disables rewrites — the extension never blocks on a missing or stale binary
 - Installed to `.omp/hooks/pre/rtk.ts` (project-local) or `~/.omp/agent/hooks/pre/rtk.ts` (global)
 
 ## Architecture
 
-OMP's extension runner loads `hooks/pre/*.ts` files as extension modules at startup. The
-`ExtensionToolWrapper` passes tool input by reference, so mutating `event.input.command`
-inside the handler directly modifies the params that OMP executes — the command is rewritten
-transparently before the bash tool runs.
-
-This is the same architecture as the Pi extension. OMP and Pi share a common extension API
-lineage (Earendil Works).
+OMP loads `hooks/pre/*.ts` files as hooks at startup. Older versions observe in-place input
+mutation, while newer versions apply a handler's returned `{ input }`. The hook does both so
+the rewritten command reaches execution across supported OMP versions.
 
 ## Install
 
