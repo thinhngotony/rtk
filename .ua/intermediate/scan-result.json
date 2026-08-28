@@ -1,0 +1,3243 @@
+{
+  "name": "rtk",
+  "description": "Rust Token Killer - High-performance CLI proxy to minimize LLM token consumption. Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "java",
+    "json",
+    "markdown",
+    "python",
+    "ruby",
+    "rust",
+    "shell",
+    "toml",
+    "txt",
+    "typescript",
+    "unknown",
+    "xml",
+    "yaml"
+  ],
+  "frameworks": [],
+  "files": [
+    {
+      "path": ".claude/agents/code-reviewer.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/debugger.md",
+      "language": "markdown",
+      "sizeLines": 518,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/rtk-testing-specialist.md",
+      "language": "markdown",
+      "sizeLines": 470,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/rust-rtk.md",
+      "language": "markdown",
+      "sizeLines": 522,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/system-architect.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/technical-writer.md",
+      "language": "markdown",
+      "sizeLines": 354,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/clean-worktree.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/clean-worktrees.md",
+      "language": "markdown",
+      "sizeLines": 165,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/diagnose.md",
+      "language": "markdown",
+      "sizeLines": 352,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/audit-codebase.md",
+      "language": "markdown",
+      "sizeLines": 284,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/clean-worktree.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/clean-worktrees.md",
+      "language": "markdown",
+      "sizeLines": 162,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/codereview.md",
+      "language": "markdown",
+      "sizeLines": 260,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/remove-worktree.md",
+      "language": "markdown",
+      "sizeLines": 155,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/worktree-status.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/tech/worktree.md",
+      "language": "markdown",
+      "sizeLines": 188,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/test-routing.md",
+      "language": "markdown",
+      "sizeLines": 362,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/worktree-status.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/commands/worktree.md",
+      "language": "markdown",
+      "sizeLines": 211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/hooks/bash/pre-commit-format.sh",
+      "language": "shell",
+      "sizeLines": 16,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".claude/hooks/rtk-rewrite.sh",
+      "language": "shell",
+      "sizeLines": 107,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".claude/hooks/rtk-suggest.sh",
+      "language": "shell",
+      "sizeLines": 150,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".claude/rules/cli-testing.md",
+      "language": "markdown",
+      "sizeLines": 553,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/rust-patterns.md",
+      "language": "markdown",
+      "sizeLines": 253,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/search-strategy.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/code-simplifier/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/design-patterns/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 248,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/issue-triage/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 364,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/issue-triage/templates/issue-comment.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/performance/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 435,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pr-review/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 227,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pr-triage/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 332,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/pr-triage/templates/review-comment.md",
+      "language": "markdown",
+      "sizeLines": 71,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/repo-recap/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 216,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/rtk-tdd/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/rtk-tdd/references/testing-patterns.md",
+      "language": "markdown",
+      "sizeLines": 124,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/rtk-triage/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 244,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/security-guardian/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 504,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/ship/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 398,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/tdd-rust/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 289,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "language": "markdown",
+      "sizeLines": 66,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "language": "yaml",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/docs-pipeline-contract.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/hooks/rtk-rewrite.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/workflows/CICD.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/cd.yml",
+      "language": "yaml",
+      "sizeLines": 156,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "language": "yaml",
+      "sizeLines": 389,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/next-release.yml",
+      "language": "yaml",
+      "sizeLines": 132,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/pr-target-check.yml",
+      "language": "yaml",
+      "sizeLines": 48,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "language": "yaml",
+      "sizeLines": 370,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".release-please-manifest.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".rtk/filters.toml",
+      "language": "toml",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".semgrep.yml",
+      "language": "yaml",
+      "sizeLines": 108,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 1211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 171,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 307,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Cargo.toml",
+      "language": "toml",
+      "sizeLines": 71,
+      "fileCategory": "config"
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Formula/rtk.rb",
+      "language": "ruby",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "INSTALL.md",
+      "language": "markdown",
+      "sizeLines": 400,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 527,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_es.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_fr.md",
+      "language": "markdown",
+      "sizeLines": 217,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_ja.md",
+      "language": "markdown",
+      "sizeLines": 184,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_ko.md",
+      "language": "markdown",
+      "sizeLines": 184,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_pt.md",
+      "language": "markdown",
+      "sizeLines": 186,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README_zh.md",
+      "language": "markdown",
+      "sizeLines": 191,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "sizeLines": 217,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "build.rs",
+      "language": "rust",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/TELEMETRY.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/contributing/ARCHITECTURE.md",
+      "language": "markdown",
+      "sizeLines": 1060,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/contributing/CODING_PRACTICES.md",
+      "language": "markdown",
+      "sizeLines": 186,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/contributing/TECHNICAL.md",
+      "language": "markdown",
+      "sizeLines": 435,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/analytics/discover.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/analytics/gain.md",
+      "language": "markdown",
+      "sizeLines": 221,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/getting-started/configuration.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/getting-started/installation.md",
+      "language": "markdown",
+      "sizeLines": 95,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/getting-started/quick-start.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/getting-started/supported-agents.md",
+      "language": "markdown",
+      "sizeLines": 263,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/index.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/resources/savings-explained.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/resources/telemetry.md",
+      "language": "markdown",
+      "sizeLines": 168,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/resources/troubleshooting.md",
+      "language": "markdown",
+      "sizeLines": 184,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/guide/resources/what-rtk-covers.md",
+      "language": "markdown",
+      "sizeLines": 161,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/maintainers/MAINTAINERS_APPLY.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/usage/AUDIT_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 446,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/usage/FEATURES.md",
+      "language": "markdown",
+      "sizeLines": 1365,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/usage/TRACKING.md",
+      "language": "markdown",
+      "sizeLines": 589,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/README.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/antigravity/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/antigravity/rules.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/claude/README.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/claude/rtk-awareness.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/claude/rtk-rewrite.sh",
+      "language": "shell",
+      "sizeLines": 101,
+      "fileCategory": "script"
+    },
+    {
+      "path": "hooks/claude/test-rtk-rewrite.sh",
+      "language": "shell",
+      "sizeLines": 434,
+      "fileCategory": "script"
+    },
+    {
+      "path": "hooks/cline/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/cline/rules.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/codex/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/codex/rtk-awareness.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/copilot/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/copilot/rtk-awareness.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/copilot/test-rtk-rewrite.sh",
+      "language": "shell",
+      "sizeLines": 293,
+      "fileCategory": "script"
+    },
+    {
+      "path": "hooks/cursor/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/cursor/rtk-rewrite.sh",
+      "language": "shell",
+      "sizeLines": 67,
+      "fileCategory": "script"
+    },
+    {
+      "path": "hooks/hermes/README.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/hermes/rtk-rewrite/__init__.py",
+      "language": "python",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/hermes/rtk-rewrite/plugin.yaml",
+      "language": "yaml",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "hooks/hermes/tests/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/hermes/tests/test_rtk_rewrite_plugin.py",
+      "language": "python",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/kilocode/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/kilocode/rules.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/opencode/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/opencode/rtk.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/pi/README.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/pi/rtk.ts",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/vibe/README.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/windsurf/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "hooks/windsurf/rules.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "install.sh",
+      "language": "shell",
+      "sizeLines": 185,
+      "fileCategory": "script"
+    },
+    {
+      "path": "openclaw/README.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openclaw/index.ts",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "openclaw/openclaw.plugin.json",
+      "language": "json",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "openclaw/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "release-please-config.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "scripts/benchmark-sessions/lib/runner.py",
+      "language": "python",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark.sh",
+      "language": "shell",
+      "sizeLines": 698,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/benchmark/cleanup.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark/cloud-init.yaml",
+      "language": "yaml",
+      "sizeLines": 315,
+      "fileCategory": "config"
+    },
+    {
+      "path": "scripts/benchmark/lib/report.ts",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark/lib/test.ts",
+      "language": "typescript",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark/lib/vm.ts",
+      "language": "typescript",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark/rebuild.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/benchmark/run.ts",
+      "language": "typescript",
+      "sizeLines": 425,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/check-installation.sh",
+      "language": "shell",
+      "sizeLines": 162,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/check-test-presence.sh",
+      "language": "shell",
+      "sizeLines": 69,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/install-local.sh",
+      "language": "shell",
+      "sizeLines": 37,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/rtk-economics.sh",
+      "language": "shell",
+      "sizeLines": 137,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/test-all.sh",
+      "language": "shell",
+      "sizeLines": 585,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/test-aristote.sh",
+      "language": "shell",
+      "sizeLines": 227,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/test-install.sh",
+      "language": "shell",
+      "sizeLines": 98,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/test-ruby.sh",
+      "language": "shell",
+      "sizeLines": 463,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/test-tracking.sh",
+      "language": "shell",
+      "sizeLines": 79,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/update-readme-metrics.sh",
+      "language": "shell",
+      "sizeLines": 32,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/validate-docs.sh",
+      "language": "shell",
+      "sizeLines": 41,
+      "fileCategory": "script"
+    },
+    {
+      "path": "src/analytics/README.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/analytics/cc_economics.rs",
+      "language": "rust",
+      "sizeLines": 1155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/analytics/ccusage.rs",
+      "language": "rust",
+      "sizeLines": 396,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/analytics/gain.rs",
+      "language": "rust",
+      "sizeLines": 762,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/analytics/mod.rs",
+      "language": "rust",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/analytics/session_cmd.rs",
+      "language": "rust",
+      "sizeLines": 440,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/README.md",
+      "language": "markdown",
+      "sizeLines": 309,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/cloud/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/cloud/aws_cmd.rs",
+      "language": "rust",
+      "sizeLines": 2767,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/cloud/container.rs",
+      "language": "rust",
+      "sizeLines": 1025,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/cloud/curl_cmd.rs",
+      "language": "rust",
+      "sizeLines": 311,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/cloud/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/cloud/psql_cmd.rs",
+      "language": "rust",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/cloud/wget_cmd.rs",
+      "language": "rust",
+      "sizeLines": 372,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/dotnet/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/dotnet/binlog.rs",
+      "language": "rust",
+      "sizeLines": 1667,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_cmd.rs",
+      "language": "rust",
+      "sizeLines": 2735,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_format_report.rs",
+      "language": "rust",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_trx.rs",
+      "language": "rust",
+      "sizeLines": 590,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/dotnet/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/README.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/git/diff_cmd.rs",
+      "language": "rust",
+      "sizeLines": 516,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/gh_cmd.rs",
+      "language": "rust",
+      "sizeLines": 1636,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/git.rs",
+      "language": "rust",
+      "sizeLines": 3325,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/glab_cmd.rs",
+      "language": "rust",
+      "sizeLines": 1610,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/gt_cmd.rs",
+      "language": "rust",
+      "sizeLines": 776,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/git/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/go/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/go/go_cmd.rs",
+      "language": "rust",
+      "sizeLines": 1136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/go/golangci_cmd.rs",
+      "language": "rust",
+      "sizeLines": 723,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/go/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/README.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/js/lint_cmd.rs",
+      "language": "rust",
+      "sizeLines": 708,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/next_cmd.rs",
+      "language": "rust",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/npm_cmd.rs",
+      "language": "rust",
+      "sizeLines": 237,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/playwright_cmd.rs",
+      "language": "rust",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/pnpm_cmd.rs",
+      "language": "rust",
+      "sizeLines": 677,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/prettier_cmd.rs",
+      "language": "rust",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/prisma_cmd.rs",
+      "language": "rust",
+      "sizeLines": 491,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/tsc_cmd.rs",
+      "language": "rust",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/js/vitest_cmd.rs",
+      "language": "rust",
+      "sizeLines": 606,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/jvm/README.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/jvm/gradlew_cmd.rs",
+      "language": "rust",
+      "sizeLines": 1405,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/jvm/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/jvm/mvn_cmd.rs",
+      "language": "rust",
+      "sizeLines": 2118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/mod.rs",
+      "language": "rust",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/README.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/php/artisan_cmd.rs",
+      "language": "rust",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/ecs_cmd.rs",
+      "language": "rust",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/paratest_cmd.rs",
+      "language": "rust",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/pest_cmd.rs",
+      "language": "rust",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/php_cmd.rs",
+      "language": "rust",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/phpstan_cmd.rs",
+      "language": "rust",
+      "sizeLines": 568,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/phpunit_cmd.rs",
+      "language": "rust",
+      "sizeLines": 394,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/pint_cmd.rs",
+      "language": "rust",
+      "sizeLines": 227,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/test_output.rs",
+      "language": "rust",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/php/utils.rs",
+      "language": "rust",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/python/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/mypy_cmd.rs",
+      "language": "rust",
+      "sizeLines": 371,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/pip_cmd.rs",
+      "language": "rust",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/pytest_cmd.rs",
+      "language": "rust",
+      "sizeLines": 531,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/ruff_cmd.rs",
+      "language": "rust",
+      "sizeLines": 467,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/python/uv_cmd.rs",
+      "language": "rust",
+      "sizeLines": 571,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/ruby/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/ruby/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/ruby/rake_cmd.rs",
+      "language": "rust",
+      "sizeLines": 533,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/ruby/rspec_cmd.rs",
+      "language": "rust",
+      "sizeLines": 1024,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/ruby/rubocop_cmd.rs",
+      "language": "rust",
+      "sizeLines": 638,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/rust/README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/rust/cargo_cmd.rs",
+      "language": "rust",
+      "sizeLines": 2800,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/rust/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/rust/runner.rs",
+      "language": "rust",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/scala/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/scala/sbt_cmd.rs",
+      "language": "rust",
+      "sizeLines": 839,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/README.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/cmds/system/constants.rs",
+      "language": "rust",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/deps.rs",
+      "language": "rust",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/env_cmd.rs",
+      "language": "rust",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/find_cmd.rs",
+      "language": "rust",
+      "sizeLines": 620,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/format_cmd.rs",
+      "language": "rust",
+      "sizeLines": 377,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/json_cmd.rs",
+      "language": "rust",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/local_llm.rs",
+      "language": "rust",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/log_cmd.rs",
+      "language": "rust",
+      "sizeLines": 280,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/ls.rs",
+      "language": "rust",
+      "sizeLines": 715,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/mod.rs",
+      "language": "rust",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/pipe_cmd.rs",
+      "language": "rust",
+      "sizeLines": 610,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/read.rs",
+      "language": "rust",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/search.rs",
+      "language": "rust",
+      "sizeLines": 1655,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/summary.rs",
+      "language": "rust",
+      "sizeLines": 301,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/tree.rs",
+      "language": "rust",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/cmds/system/wc_cmd.rs",
+      "language": "rust",
+      "sizeLines": 388,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/README.md",
+      "language": "markdown",
+      "sizeLines": 135,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/core/args_utils.rs",
+      "language": "rust",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/config.rs",
+      "language": "rust",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/constants.rs",
+      "language": "rust",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/display_helpers.rs",
+      "language": "rust",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/filter.rs",
+      "language": "rust",
+      "sizeLines": 547,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/guard.rs",
+      "language": "rust",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/mod.rs",
+      "language": "rust",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/runner.rs",
+      "language": "rust",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/stream.rs",
+      "language": "rust",
+      "sizeLines": 1131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/tee.rs",
+      "language": "rust",
+      "sizeLines": 705,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/telemetry.rs",
+      "language": "rust",
+      "sizeLines": 605,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/telemetry_cmd.rs",
+      "language": "rust",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/toml_filter.rs",
+      "language": "rust",
+      "sizeLines": 1968,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/tracking.rs",
+      "language": "rust",
+      "sizeLines": 1760,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/truncate.rs",
+      "language": "rust",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/core/utils.rs",
+      "language": "rust",
+      "sizeLines": 1048,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/README.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/discover/lexer.rs",
+      "language": "rust",
+      "sizeLines": 1365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/mod.rs",
+      "language": "rust",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/provider.rs",
+      "language": "rust",
+      "sizeLines": 533,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/registry.rs",
+      "language": "rust",
+      "sizeLines": 5656,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/report.rs",
+      "language": "rust",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discover/rules.rs",
+      "language": "rust",
+      "sizeLines": 1009,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/filters/README.md",
+      "language": "markdown",
+      "sizeLines": 142,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/filters/ansible-playbook.toml",
+      "language": "toml",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/basedpyright.toml",
+      "language": "toml",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/biome.toml",
+      "language": "toml",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/brew-install.toml",
+      "language": "toml",
+      "sizeLines": 37,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/bundle-install.toml",
+      "language": "toml",
+      "sizeLines": 61,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/composer-install.toml",
+      "language": "toml",
+      "sizeLines": 40,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/df.toml",
+      "language": "toml",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/dotnet-build.toml",
+      "language": "toml",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/du.toml",
+      "language": "toml",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/fail2ban-client.toml",
+      "language": "toml",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/gcc.toml",
+      "language": "toml",
+      "sizeLines": 49,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/gcloud.toml",
+      "language": "toml",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/gradle.toml",
+      "language": "toml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/hadolint.toml",
+      "language": "toml",
+      "sizeLines": 24,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/helm.toml",
+      "language": "toml",
+      "sizeLines": 103,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/iptables.toml",
+      "language": "toml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/jira.toml",
+      "language": "toml",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/jj.toml",
+      "language": "toml",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/jq.toml",
+      "language": "toml",
+      "sizeLines": 24,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/just.toml",
+      "language": "toml",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/liquibase.toml",
+      "language": "toml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/make.toml",
+      "language": "toml",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/markdownlint.toml",
+      "language": "toml",
+      "sizeLines": 24,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/mise.toml",
+      "language": "toml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/mix-compile.toml",
+      "language": "toml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/mix-format.toml",
+      "language": "toml",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/nx.toml",
+      "language": "toml",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/ollama.toml",
+      "language": "toml",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/oxlint.toml",
+      "language": "toml",
+      "sizeLines": 43,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/ping.toml",
+      "language": "toml",
+      "sizeLines": 63,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pio-run.toml",
+      "language": "toml",
+      "sizeLines": 40,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/poetry-install.toml",
+      "language": "toml",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pre-commit.toml",
+      "language": "toml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/ps.toml",
+      "language": "toml",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pulumi-destroy.toml",
+      "language": "toml",
+      "sizeLines": 60,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pulumi-preview.toml",
+      "language": "toml",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pulumi-refresh.toml",
+      "language": "toml",
+      "sizeLines": 57,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pulumi-stack.toml",
+      "language": "toml",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/pulumi-up.toml",
+      "language": "toml",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/quarto-render.toml",
+      "language": "toml",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/rsync.toml",
+      "language": "toml",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/shellcheck.toml",
+      "language": "toml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/shopify-theme.toml",
+      "language": "toml",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/skopeo.toml",
+      "language": "toml",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/sops.toml",
+      "language": "toml",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/spring-boot.toml",
+      "language": "toml",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/ssh.toml",
+      "language": "toml",
+      "sizeLines": 44,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/stat.toml",
+      "language": "toml",
+      "sizeLines": 44,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/swift-build.toml",
+      "language": "toml",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/systemctl-status.toml",
+      "language": "toml",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/task.toml",
+      "language": "toml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/terraform-plan.toml",
+      "language": "toml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/tofu-fmt.toml",
+      "language": "toml",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/tofu-init.toml",
+      "language": "toml",
+      "sizeLines": 38,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/tofu-plan.toml",
+      "language": "toml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/tofu-validate.toml",
+      "language": "toml",
+      "sizeLines": 17,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/trunk-build.toml",
+      "language": "toml",
+      "sizeLines": 39,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/turbo.toml",
+      "language": "toml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/ty.toml",
+      "language": "toml",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/uv-sync.toml",
+      "language": "toml",
+      "sizeLines": 37,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/xcodebuild.toml",
+      "language": "toml",
+      "sizeLines": 99,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/yadm.toml",
+      "language": "toml",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/filters/yamllint.toml",
+      "language": "toml",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/hooks/README.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/hooks/constants.rs",
+      "language": "rust",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/hook_audit_cmd.rs",
+      "language": "rust",
+      "sizeLines": 285,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/hook_check.rs",
+      "language": "rust",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/hook_cmd.rs",
+      "language": "rust",
+      "sizeLines": 2183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/init.rs",
+      "language": "rust",
+      "sizeLines": 8387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/integrity.rs",
+      "language": "rust",
+      "sizeLines": 655,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/mod.rs",
+      "language": "rust",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/permissions.rs",
+      "language": "rust",
+      "sizeLines": 1186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/rewrite_cmd.rs",
+      "language": "rust",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/trust.rs",
+      "language": "rust",
+      "sizeLines": 631,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/verify_cmd.rs",
+      "language": "rust",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/learn/README.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/learn/detector.rs",
+      "language": "rust",
+      "sizeLines": 635,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/learn/mod.rs",
+      "language": "rust",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/learn/report.rs",
+      "language": "rust",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main.rs",
+      "language": "rust",
+      "sizeLines": 3640,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/parser/README.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/parser/formatter.rs",
+      "language": "rust",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/parser/mod.rs",
+      "language": "rust",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/parser/types.rs",
+      "language": "rust",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/copilot_selfheal_test.rs",
+      "language": "rust",
+      "sizeLines": 445,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/aws_backup_describe_global_settings.json",
+      "language": "json",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/dotnet/build_failed.txt",
+      "language": "txt",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/dotnet/format_changes.json",
+      "language": "json",
+      "sizeLines": 31,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/dotnet/format_empty.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/dotnet/format_success.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/dotnet/test_failed.txt",
+      "language": "txt",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/glab_ci_trace_raw.txt",
+      "language": "txt",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/glab_issue_list_raw.json",
+      "language": "json",
+      "sizeLines": 122,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/glab_mr_list_raw.json",
+      "language": "json",
+      "sizeLines": 182,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/glab_release_list_raw.txt",
+      "language": "txt",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/glab_release_view_raw.txt",
+      "language": "txt",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/golangci_v2_json.txt",
+      "language": "txt",
+      "sizeLines": 144,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_build_failed_raw.txt",
+      "language": "txt",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_build_raw.txt",
+      "language": "txt",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_connected_raw.txt",
+      "language": "txt",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_lint_raw.txt",
+      "language": "txt",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_test_failed_raw.txt",
+      "language": "txt",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/gradlew_test_raw.txt",
+      "language": "txt",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/multi-module-skeleton/child-a/pom.xml",
+      "language": "xml",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/multi-module-skeleton/child-a/src/main/java/Empty.java",
+      "language": "java",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/multi-module-skeleton/child-b/pom.xml",
+      "language": "xml",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/multi-module-skeleton/child-b/src/main/java/Empty.java",
+      "language": "java",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/multi-module-skeleton/pom.xml",
+      "language": "xml",
+      "sizeLines": 17,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/multifail-skeleton/pom.xml",
+      "language": "xml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/multifail-skeleton/src/main/java/com/example/rtk/Calc.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/multifail-skeleton/src/test/java/com/example/rtk/BoomTest.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/multifail-skeleton/src/test/java/com/example/rtk/CalcTest.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/fixtures/mvn_clean_raw.txt",
+      "language": "txt",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_compile_error_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_install_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_locale_fr_raw.txt",
+      "language": "txt",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_no_pom_raw.txt",
+      "language": "txt",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_quiet_fail_raw.txt",
+      "language": "txt",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_reactor_fail_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_reactor_pass_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_test_compile_fail_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_test_fail_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_test_multifail_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/mvn_test_pass_slice_raw.txt",
+      "language": "txt",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/oc_pods.json",
+      "language": "json",
+      "sizeLines": 450,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/phpstan_raw.json",
+      "language": "json",
+      "sizeLines": 380,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_compile_error.txt",
+      "language": "txt",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_it_test_pass.txt",
+      "language": "txt",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_fail.txt",
+      "language": "txt",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_mockito_fail.txt",
+      "language": "txt",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_munit_fail.txt",
+      "language": "txt",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_munit_pass.txt",
+      "language": "txt",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_pass.txt",
+      "language": "txt",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/sbt/sbt_test_scalamock_fail.txt",
+      "language": "txt",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/fixtures/uv_run_pytest_failure.txt",
+      "language": "txt",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/grep_context_test.rs",
+      "language": "rust",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/grep_faithful_format_test.rs",
+      "language": "rust",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/guard_integration_test.rs",
+      "language": "rust",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/pipeline_stdin_test.rs",
+      "language": "rust",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/search_compress_test.rs",
+      "language": "rust",
+      "sizeLines": 378,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/search_error_test.rs",
+      "language": "rust",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/search_faithful_test.rs",
+      "language": "rust",
+      "sizeLines": 412,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 407,
+  "filteredByIgnore": 72,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".claude/agents/code-reviewer.md": [],
+    ".claude/agents/debugger.md": [],
+    ".claude/agents/rtk-testing-specialist.md": [],
+    ".claude/agents/rust-rtk.md": [],
+    ".claude/agents/system-architect.md": [],
+    ".claude/agents/technical-writer.md": [],
+    ".claude/commands/clean-worktree.md": [],
+    ".claude/commands/clean-worktrees.md": [],
+    ".claude/commands/diagnose.md": [],
+    ".claude/commands/tech/audit-codebase.md": [],
+    ".claude/commands/tech/clean-worktree.md": [],
+    ".claude/commands/tech/clean-worktrees.md": [],
+    ".claude/commands/tech/codereview.md": [],
+    ".claude/commands/tech/remove-worktree.md": [],
+    ".claude/commands/tech/worktree-status.md": [],
+    ".claude/commands/tech/worktree.md": [],
+    ".claude/commands/test-routing.md": [],
+    ".claude/commands/worktree-status.md": [],
+    ".claude/commands/worktree.md": [],
+    ".claude/hooks/bash/pre-commit-format.sh": [],
+    ".claude/hooks/rtk-rewrite.sh": [],
+    ".claude/hooks/rtk-suggest.sh": [],
+    ".claude/rules/cli-testing.md": [],
+    ".claude/rules/rust-patterns.md": [],
+    ".claude/rules/search-strategy.md": [],
+    ".claude/skills/code-simplifier/SKILL.md": [],
+    ".claude/skills/design-patterns/SKILL.md": [],
+    ".claude/skills/issue-triage/SKILL.md": [],
+    ".claude/skills/issue-triage/templates/issue-comment.md": [],
+    ".claude/skills/performance/SKILL.md": [],
+    ".claude/skills/pr-review/SKILL.md": [],
+    ".claude/skills/pr-triage/SKILL.md": [],
+    ".claude/skills/pr-triage/templates/review-comment.md": [],
+    ".claude/skills/repo-recap/SKILL.md": [],
+    ".claude/skills/rtk-tdd/SKILL.md": [],
+    ".claude/skills/rtk-tdd/references/testing-patterns.md": [],
+    ".claude/skills/rtk-triage/SKILL.md": [],
+    ".claude/skills/security-guardian/SKILL.md": [],
+    ".claude/skills/ship/SKILL.md": [],
+    ".claude/skills/tdd-rust/SKILL.md": [],
+    ".gitattributes": [],
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".github/copilot-instructions.md": [],
+    ".github/dependabot.yml": [],
+    ".github/docs-pipeline-contract.md": [],
+    ".github/hooks/rtk-rewrite.json": [],
+    ".github/workflows/CICD.md": [],
+    ".github/workflows/cd.yml": [],
+    ".github/workflows/ci.yml": [],
+    ".github/workflows/next-release.yml": [],
+    ".github/workflows/pr-target-check.yml": [],
+    ".github/workflows/release.yml": [],
+    ".release-please-manifest.json": [],
+    ".rtk/filters.toml": [],
+    ".semgrep.yml": [],
+    "CHANGELOG.md": [],
+    "CLAUDE.md": [],
+    "CONTRIBUTING.md": [],
+    "Cargo.toml": [],
+    "DISCLAIMER.md": [],
+    "Formula/rtk.rb": [],
+    "INSTALL.md": [],
+    "README.md": [],
+    "README_es.md": [],
+    "README_fr.md": [],
+    "README_ja.md": [],
+    "README_ko.md": [],
+    "README_pt.md": [],
+    "README_zh.md": [],
+    "SECURITY.md": [],
+    "build.rs": [],
+    "docs/TELEMETRY.md": [],
+    "docs/contributing/ARCHITECTURE.md": [],
+    "docs/contributing/CODING_PRACTICES.md": [],
+    "docs/contributing/TECHNICAL.md": [],
+    "docs/guide/analytics/discover.md": [],
+    "docs/guide/analytics/gain.md": [],
+    "docs/guide/getting-started/configuration.md": [],
+    "docs/guide/getting-started/installation.md": [],
+    "docs/guide/getting-started/quick-start.md": [],
+    "docs/guide/getting-started/supported-agents.md": [],
+    "docs/guide/index.md": [],
+    "docs/guide/resources/savings-explained.md": [],
+    "docs/guide/resources/telemetry.md": [],
+    "docs/guide/resources/troubleshooting.md": [],
+    "docs/guide/resources/what-rtk-covers.md": [],
+    "docs/maintainers/MAINTAINERS_APPLY.md": [],
+    "docs/usage/AUDIT_GUIDE.md": [],
+    "docs/usage/FEATURES.md": [],
+    "docs/usage/TRACKING.md": [],
+    "hooks/README.md": [],
+    "hooks/antigravity/README.md": [],
+    "hooks/antigravity/rules.md": [],
+    "hooks/claude/README.md": [],
+    "hooks/claude/rtk-awareness.md": [],
+    "hooks/claude/rtk-rewrite.sh": [],
+    "hooks/claude/test-rtk-rewrite.sh": [],
+    "hooks/cline/README.md": [],
+    "hooks/cline/rules.md": [],
+    "hooks/codex/README.md": [],
+    "hooks/codex/rtk-awareness.md": [],
+    "hooks/copilot/README.md": [],
+    "hooks/copilot/rtk-awareness.md": [],
+    "hooks/copilot/test-rtk-rewrite.sh": [],
+    "hooks/cursor/README.md": [],
+    "hooks/cursor/rtk-rewrite.sh": [],
+    "hooks/hermes/README.md": [],
+    "hooks/hermes/rtk-rewrite/__init__.py": [],
+    "hooks/hermes/rtk-rewrite/plugin.yaml": [],
+    "hooks/hermes/tests/__init__.py": [],
+    "hooks/hermes/tests/test_rtk_rewrite_plugin.py": [],
+    "hooks/kilocode/README.md": [],
+    "hooks/kilocode/rules.md": [],
+    "hooks/opencode/README.md": [],
+    "hooks/opencode/rtk.ts": [],
+    "hooks/pi/README.md": [],
+    "hooks/pi/rtk.ts": [],
+    "hooks/vibe/README.md": [],
+    "hooks/windsurf/README.md": [],
+    "hooks/windsurf/rules.md": [],
+    "install.sh": [],
+    "openclaw/README.md": [],
+    "openclaw/index.ts": [],
+    "openclaw/openclaw.plugin.json": [],
+    "openclaw/package.json": [],
+    "release-please-config.json": [],
+    "scripts/benchmark-sessions/lib/runner.py": [],
+    "scripts/benchmark.sh": [],
+    "scripts/benchmark/cleanup.ts": [
+      "scripts/benchmark/lib/vm.ts"
+    ],
+    "scripts/benchmark/cloud-init.yaml": [],
+    "scripts/benchmark/lib/report.ts": [
+      "scripts/benchmark/lib/test.ts"
+    ],
+    "scripts/benchmark/lib/test.ts": [
+      "scripts/benchmark/lib/vm.ts"
+    ],
+    "scripts/benchmark/lib/vm.ts": [],
+    "scripts/benchmark/rebuild.ts": [
+      "scripts/benchmark/lib/vm.ts"
+    ],
+    "scripts/benchmark/run.ts": [
+      "scripts/benchmark/lib/report.ts",
+      "scripts/benchmark/lib/test.ts",
+      "scripts/benchmark/lib/vm.ts"
+    ],
+    "scripts/check-installation.sh": [],
+    "scripts/check-test-presence.sh": [],
+    "scripts/install-local.sh": [],
+    "scripts/rtk-economics.sh": [],
+    "scripts/test-all.sh": [],
+    "scripts/test-aristote.sh": [],
+    "scripts/test-install.sh": [],
+    "scripts/test-ruby.sh": [],
+    "scripts/test-tracking.sh": [],
+    "scripts/update-readme-metrics.sh": [],
+    "scripts/validate-docs.sh": [],
+    "src/analytics/README.md": [],
+    "src/analytics/cc_economics.rs": [
+      "src/core/tracking.rs",
+      "src/core/utils.rs"
+    ],
+    "src/analytics/ccusage.rs": [
+      "src/core/stream.rs",
+      "src/core/utils.rs"
+    ],
+    "src/analytics/gain.rs": [
+      "src/core/display_helpers.rs",
+      "src/core/tracking.rs",
+      "src/core/utils.rs",
+      "src/hooks/mod.rs"
+    ],
+    "src/analytics/mod.rs": [
+      "src/analytics/cc_economics.rs",
+      "src/analytics/ccusage.rs",
+      "src/analytics/gain.rs",
+      "src/analytics/session_cmd.rs"
+    ],
+    "src/analytics/session_cmd.rs": [
+      "src/core/utils.rs",
+      "src/discover/provider.rs",
+      "src/discover/registry.rs"
+    ],
+    "src/cmds/README.md": [],
+    "src/cmds/cloud/README.md": [],
+    "src/cmds/cloud/aws_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/tee.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/cloud/container.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/runner.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/cloud/curl_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/tee.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/cloud/mod.rs": [],
+    "src/cmds/cloud/psql_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/cloud/wget_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/dotnet/README.md": [],
+    "src/cmds/dotnet/binlog.rs": [
+      "src/core/utils.rs"
+    ],
+    "src/cmds/dotnet/dotnet_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/dotnet/dotnet_format_report.rs": [],
+    "src/cmds/dotnet/dotnet_trx.rs": [],
+    "src/cmds/dotnet/mod.rs": [],
+    "src/cmds/git/README.md": [],
+    "src/cmds/git/diff_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs"
+    ],
+    "src/cmds/git/gh_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/git/git.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/runner.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/git/glab_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/git/gt_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/git/mod.rs": [],
+    "src/cmds/go/README.md": [],
+    "src/cmds/go/go_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/go/golangci_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/go/mod.rs": [],
+    "src/cmds/js/README.md": [],
+    "src/cmds/js/lint_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/mod.rs": [],
+    "src/cmds/js/next_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/npm_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/playwright_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs",
+      "src/parser/mod.rs"
+    ],
+    "src/cmds/js/pnpm_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs",
+      "src/parser/mod.rs"
+    ],
+    "src/cmds/js/prettier_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/prisma_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/tsc_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/js/vitest_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs",
+      "src/parser/mod.rs"
+    ],
+    "src/cmds/jvm/README.md": [],
+    "src/cmds/jvm/gradlew_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/jvm/mod.rs": [],
+    "src/cmds/jvm/mvn_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/mod.rs": [
+      "src/cmds/cloud/mod.rs",
+      "src/cmds/dotnet/mod.rs",
+      "src/cmds/git/mod.rs",
+      "src/cmds/go/mod.rs",
+      "src/cmds/js/mod.rs",
+      "src/cmds/jvm/mod.rs",
+      "src/cmds/php/mod.rs",
+      "src/cmds/python/mod.rs",
+      "src/cmds/ruby/mod.rs",
+      "src/cmds/rust/mod.rs",
+      "src/cmds/scala/mod.rs",
+      "src/cmds/system/mod.rs"
+    ],
+    "src/cmds/php/README.md": [],
+    "src/cmds/php/artisan_cmd.rs": [],
+    "src/cmds/php/ecs_cmd.rs": [
+      "src/core/mod.rs"
+    ],
+    "src/cmds/php/mod.rs": [],
+    "src/cmds/php/paratest_cmd.rs": [
+      "src/core/mod.rs"
+    ],
+    "src/cmds/php/pest_cmd.rs": [
+      "src/core/mod.rs"
+    ],
+    "src/cmds/php/php_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/php/phpstan_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/php/phpunit_cmd.rs": [
+      "src/core/mod.rs"
+    ],
+    "src/cmds/php/pint_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/php/test_output.rs": [],
+    "src/cmds/php/utils.rs": [
+      "src/core/utils.rs"
+    ],
+    "src/cmds/python/README.md": [],
+    "src/cmds/python/mod.rs": [],
+    "src/cmds/python/mypy_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/python/pip_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/python/pytest_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/python/ruff_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/python/uv_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/ruby/README.md": [],
+    "src/cmds/ruby/mod.rs": [],
+    "src/cmds/ruby/rake_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/ruby/rspec_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/ruby/rubocop_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/rust/README.md": [],
+    "src/cmds/rust/cargo_cmd.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/rust/mod.rs": [],
+    "src/cmds/rust/runner.rs": [
+      "src/core/stream.rs",
+      "src/core/truncate.rs"
+    ],
+    "src/cmds/scala/mod.rs": [],
+    "src/cmds/scala/sbt_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/README.md": [],
+    "src/cmds/system/constants.rs": [],
+    "src/cmds/system/deps.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/truncate.rs"
+    ],
+    "src/cmds/system/env_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/truncate.rs"
+    ],
+    "src/cmds/system/find_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs"
+    ],
+    "src/cmds/system/format_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/json_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs"
+    ],
+    "src/cmds/system/local_llm.rs": [
+      "src/core/filter.rs"
+    ],
+    "src/cmds/system/log_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/truncate.rs"
+    ],
+    "src/cmds/system/ls.rs": [
+      "src/core/runner.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/mod.rs": [],
+    "src/cmds/system/pipe_cmd.rs": [
+      "src/core/guard.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs"
+    ],
+    "src/cmds/system/read.rs": [
+      "src/core/filter.rs",
+      "src/core/guard.rs",
+      "src/core/mod.rs"
+    ],
+    "src/cmds/system/search.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/summary.rs": [
+      "src/core/guard.rs",
+      "src/core/mod.rs",
+      "src/core/stream.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/tree.rs": [
+      "src/core/runner.rs",
+      "src/core/utils.rs"
+    ],
+    "src/cmds/system/wc_cmd.rs": [
+      "src/core/runner.rs",
+      "src/core/utils.rs"
+    ],
+    "src/core/README.md": [],
+    "src/core/args_utils.rs": [],
+    "src/core/config.rs": [],
+    "src/core/constants.rs": [],
+    "src/core/display_helpers.rs": [
+      "src/core/tracking.rs",
+      "src/core/utils.rs"
+    ],
+    "src/core/filter.rs": [],
+    "src/core/guard.rs": [
+      "src/core/tracking.rs"
+    ],
+    "src/core/mod.rs": [
+      "src/core/args_utils.rs",
+      "src/core/config.rs",
+      "src/core/constants.rs",
+      "src/core/display_helpers.rs",
+      "src/core/filter.rs",
+      "src/core/guard.rs",
+      "src/core/runner.rs",
+      "src/core/stream.rs",
+      "src/core/tee.rs",
+      "src/core/telemetry.rs",
+      "src/core/telemetry_cmd.rs",
+      "src/core/toml_filter.rs",
+      "src/core/tracking.rs",
+      "src/core/truncate.rs",
+      "src/core/utils.rs"
+    ],
+    "src/core/runner.rs": [
+      "src/core/mod.rs",
+      "src/core/stream.rs"
+    ],
+    "src/core/stream.rs": [],
+    "src/core/tee.rs": [
+      "src/core/config.rs"
+    ],
+    "src/core/telemetry.rs": [
+      "src/core/mod.rs",
+      "src/hooks/constants.rs",
+      "src/hooks/init.rs"
+    ],
+    "src/core/telemetry_cmd.rs": [],
+    "src/core/toml_filter.rs": [],
+    "src/core/tracking.rs": [],
+    "src/core/truncate.rs": [],
+    "src/core/utils.rs": [],
+    "src/discover/README.md": [],
+    "src/discover/lexer.rs": [],
+    "src/discover/mod.rs": [
+      "src/discover/lexer.rs",
+      "src/discover/provider.rs",
+      "src/discover/registry.rs",
+      "src/discover/report.rs",
+      "src/discover/rules.rs"
+    ],
+    "src/discover/provider.rs": [
+      "src/hooks/init.rs"
+    ],
+    "src/discover/registry.rs": [
+      "src/core/utils.rs"
+    ],
+    "src/discover/report.rs": [
+      "src/hooks/constants.rs"
+    ],
+    "src/discover/rules.rs": [],
+    "src/filters/README.md": [],
+    "src/filters/ansible-playbook.toml": [],
+    "src/filters/basedpyright.toml": [],
+    "src/filters/biome.toml": [],
+    "src/filters/brew-install.toml": [],
+    "src/filters/bundle-install.toml": [],
+    "src/filters/composer-install.toml": [],
+    "src/filters/df.toml": [],
+    "src/filters/dotnet-build.toml": [],
+    "src/filters/du.toml": [],
+    "src/filters/fail2ban-client.toml": [],
+    "src/filters/gcc.toml": [],
+    "src/filters/gcloud.toml": [],
+    "src/filters/gradle.toml": [],
+    "src/filters/hadolint.toml": [],
+    "src/filters/helm.toml": [],
+    "src/filters/iptables.toml": [],
+    "src/filters/jira.toml": [],
+    "src/filters/jj.toml": [],
+    "src/filters/jq.toml": [],
+    "src/filters/just.toml": [],
+    "src/filters/liquibase.toml": [],
+    "src/filters/make.toml": [],
+    "src/filters/markdownlint.toml": [],
+    "src/filters/mise.toml": [],
+    "src/filters/mix-compile.toml": [],
+    "src/filters/mix-format.toml": [],
+    "src/filters/nx.toml": [],
+    "src/filters/ollama.toml": [],
+    "src/filters/oxlint.toml": [],
+    "src/filters/ping.toml": [],
+    "src/filters/pio-run.toml": [],
+    "src/filters/poetry-install.toml": [],
+    "src/filters/pre-commit.toml": [],
+    "src/filters/ps.toml": [],
+    "src/filters/pulumi-destroy.toml": [],
+    "src/filters/pulumi-preview.toml": [],
+    "src/filters/pulumi-refresh.toml": [],
+    "src/filters/pulumi-stack.toml": [],
+    "src/filters/pulumi-up.toml": [],
+    "src/filters/quarto-render.toml": [],
+    "src/filters/rsync.toml": [],
+    "src/filters/shellcheck.toml": [],
+    "src/filters/shopify-theme.toml": [],
+    "src/filters/skopeo.toml": [],
+    "src/filters/sops.toml": [],
+    "src/filters/spring-boot.toml": [],
+    "src/filters/ssh.toml": [],
+    "src/filters/stat.toml": [],
+    "src/filters/swift-build.toml": [],
+    "src/filters/systemctl-status.toml": [],
+    "src/filters/task.toml": [],
+    "src/filters/terraform-plan.toml": [],
+    "src/filters/tofu-fmt.toml": [],
+    "src/filters/tofu-init.toml": [],
+    "src/filters/tofu-plan.toml": [],
+    "src/filters/tofu-validate.toml": [],
+    "src/filters/trunk-build.toml": [],
+    "src/filters/turbo.toml": [],
+    "src/filters/ty.toml": [],
+    "src/filters/uv-sync.toml": [],
+    "src/filters/xcodebuild.toml": [],
+    "src/filters/yadm.toml": [],
+    "src/filters/yamllint.toml": [],
+    "src/hooks/README.md": [],
+    "src/hooks/constants.rs": [],
+    "src/hooks/hook_audit_cmd.rs": [],
+    "src/hooks/hook_check.rs": [
+      "src/core/constants.rs"
+    ],
+    "src/hooks/hook_cmd.rs": [
+      "src/discover/registry.rs"
+    ],
+    "src/hooks/init.rs": [
+      "src/hooks/constants.rs"
+    ],
+    "src/hooks/integrity.rs": [],
+    "src/hooks/mod.rs": [
+      "src/hooks/constants.rs",
+      "src/hooks/hook_audit_cmd.rs",
+      "src/hooks/hook_check.rs",
+      "src/hooks/hook_cmd.rs",
+      "src/hooks/init.rs",
+      "src/hooks/integrity.rs",
+      "src/hooks/permissions.rs",
+      "src/hooks/rewrite_cmd.rs",
+      "src/hooks/trust.rs",
+      "src/hooks/verify_cmd.rs"
+    ],
+    "src/hooks/permissions.rs": [
+      "src/core/stream.rs",
+      "src/discover/lexer.rs"
+    ],
+    "src/hooks/rewrite_cmd.rs": [
+      "src/discover/mod.rs"
+    ],
+    "src/hooks/trust.rs": [
+      "src/core/constants.rs"
+    ],
+    "src/hooks/verify_cmd.rs": [
+      "src/core/mod.rs"
+    ],
+    "src/learn/README.md": [],
+    "src/learn/detector.rs": [],
+    "src/learn/mod.rs": [
+      "src/discover/provider.rs",
+      "src/learn/detector.rs",
+      "src/learn/report.rs"
+    ],
+    "src/learn/report.rs": [
+      "src/learn/detector.rs"
+    ],
+    "src/main.rs": [
+      "src/analytics/mod.rs",
+      "src/cmds/mod.rs",
+      "src/core/mod.rs",
+      "src/discover/mod.rs",
+      "src/hooks/mod.rs",
+      "src/learn/mod.rs",
+      "src/parser/mod.rs"
+    ],
+    "src/parser/README.md": [],
+    "src/parser/formatter.rs": [
+      "src/core/truncate.rs"
+    ],
+    "src/parser/mod.rs": [
+      "src/parser/formatter.rs",
+      "src/parser/types.rs"
+    ],
+    "src/parser/types.rs": [],
+    "tests/copilot_selfheal_test.rs": [],
+    "tests/fixtures/aws_backup_describe_global_settings.json": [],
+    "tests/fixtures/dotnet/build_failed.txt": [],
+    "tests/fixtures/dotnet/format_changes.json": [],
+    "tests/fixtures/dotnet/format_empty.json": [],
+    "tests/fixtures/dotnet/format_success.json": [],
+    "tests/fixtures/dotnet/test_failed.txt": [],
+    "tests/fixtures/glab_ci_trace_raw.txt": [],
+    "tests/fixtures/glab_issue_list_raw.json": [],
+    "tests/fixtures/glab_mr_list_raw.json": [],
+    "tests/fixtures/glab_release_list_raw.txt": [],
+    "tests/fixtures/glab_release_view_raw.txt": [],
+    "tests/fixtures/golangci_v2_json.txt": [],
+    "tests/fixtures/gradlew_build_failed_raw.txt": [],
+    "tests/fixtures/gradlew_build_raw.txt": [],
+    "tests/fixtures/gradlew_connected_raw.txt": [],
+    "tests/fixtures/gradlew_lint_raw.txt": [],
+    "tests/fixtures/gradlew_test_failed_raw.txt": [],
+    "tests/fixtures/gradlew_test_raw.txt": [],
+    "tests/fixtures/multi-module-skeleton/child-a/pom.xml": [],
+    "tests/fixtures/multi-module-skeleton/child-a/src/main/java/Empty.java": [],
+    "tests/fixtures/multi-module-skeleton/child-b/pom.xml": [],
+    "tests/fixtures/multi-module-skeleton/child-b/src/main/java/Empty.java": [],
+    "tests/fixtures/multi-module-skeleton/pom.xml": [],
+    "tests/fixtures/multifail-skeleton/pom.xml": [],
+    "tests/fixtures/multifail-skeleton/src/main/java/com/example/rtk/Calc.java": [],
+    "tests/fixtures/multifail-skeleton/src/test/java/com/example/rtk/BoomTest.java": [],
+    "tests/fixtures/multifail-skeleton/src/test/java/com/example/rtk/CalcTest.java": [],
+    "tests/fixtures/mvn_clean_raw.txt": [],
+    "tests/fixtures/mvn_compile_error_slice_raw.txt": [],
+    "tests/fixtures/mvn_install_slice_raw.txt": [],
+    "tests/fixtures/mvn_locale_fr_raw.txt": [],
+    "tests/fixtures/mvn_no_pom_raw.txt": [],
+    "tests/fixtures/mvn_quiet_fail_raw.txt": [],
+    "tests/fixtures/mvn_reactor_fail_slice_raw.txt": [],
+    "tests/fixtures/mvn_reactor_pass_slice_raw.txt": [],
+    "tests/fixtures/mvn_test_compile_fail_slice_raw.txt": [],
+    "tests/fixtures/mvn_test_fail_slice_raw.txt": [],
+    "tests/fixtures/mvn_test_multifail_slice_raw.txt": [],
+    "tests/fixtures/mvn_test_pass_slice_raw.txt": [],
+    "tests/fixtures/oc_pods.json": [],
+    "tests/fixtures/phpstan_raw.json": [],
+    "tests/fixtures/sbt/sbt_compile_error.txt": [],
+    "tests/fixtures/sbt/sbt_it_test_pass.txt": [],
+    "tests/fixtures/sbt/sbt_test_fail.txt": [],
+    "tests/fixtures/sbt/sbt_test_mockito_fail.txt": [],
+    "tests/fixtures/sbt/sbt_test_munit_fail.txt": [],
+    "tests/fixtures/sbt/sbt_test_munit_pass.txt": [],
+    "tests/fixtures/sbt/sbt_test_pass.txt": [],
+    "tests/fixtures/sbt/sbt_test_scalamock_fail.txt": [],
+    "tests/fixtures/uv_run_pytest_failure.txt": [],
+    "tests/grep_context_test.rs": [],
+    "tests/grep_faithful_format_test.rs": [],
+    "tests/guard_integration_test.rs": [],
+    "tests/pipeline_stdin_test.rs": [],
+    "tests/search_compress_test.rs": [],
+    "tests/search_error_test.rs": [],
+    "tests/search_faithful_test.rs": []
+  }
+}
